@@ -1,0 +1,137 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(65, 182, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .main {
+            background-color: #ffff;
+            width: 450px;
+            height: 400px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+        .label {
+            padding-right: 9.3rem;
+        }
+
+        .in {
+            border: 1px solid black;
+            height: 1.5rem;
+            padding-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            color: #ffff;
+            background-color: rgb(65, 182, 255);
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: monospace;
+            color: #ffff;
+            font-size: 2.2rem;
+            text-shadow: 1px 2px black;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+        input[type="input"] {
+            width: 100%;
+            height: 20%;
+            border: 1px solid black;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Customer Survey Form</h1>
+    <div class="main">
+        <form action="/submit" method="post">
+            <div class="first">
+                <div class="">
+                    <label for="Name" class="label">Name</label>
+                    <label for="Name" class="label">Email</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="first_name" class="in">
+                    <input type="email" name="email" class="in">
+                </div>
+            </div>
+
+
+            <label>Is this the first time you are using our products & services?</label> <br>
+            <input type="radio" id="yes" name="firstTime" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="firstTime" value="no" required>
+            <label for="no">No</label> <br>
+            <br>
+            <label>Would you suggestion to your friends and colleague?</label> <br>
+            <input type="radio" id="yes" name="firstTime" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="firstTime" value="no" required>
+            <label for="no">No</label>
+            <br>
+            <br>
+            <label>How satisfied are you with our company overall? </label> <br>
+            <input type="radio" id="yes" name="firstTime" value="yes" required>
+            <label for="yes">Satisfied</label>
+            <input type="radio" id="no" name="firstTime" value="no" required>
+            <label>Undecided</label>
+            <input type="radio" id="no" name="firstTime" value="no" required>
+            <label>Unsatisfied</label>
+            <br>
+            <br>
+            <label for="suggest">Do you have suggestion to improve our services?</label>
+            <br>
+            <br>
+            <input type="input" name="suggest" id="" width="100px"> <br>
+            <button type="submit">Submit</button>
+        </form>
+       
+    </div>
+
+        <p style="display: inline; padding-top: 10px; color:#ffff;">@2018 all Customer Survey Form. All Rights Reserved Design by <span
+                style="color: darkblue;">W3Layouts</span></p>
+
+</body>
+
+</html>
